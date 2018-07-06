@@ -91,11 +91,12 @@ To remove noise effect due to external factors. Since the provided image has no 
 Clustering is a process to find similarities among individual points.
 Density-Based Spatial Clustering of Applications with Noise (DBSACN), also known as "Euclidean Clustering", is used in this exercise and the following project for clustering points based on their density or distance between point in a cluster.
 
-```sf
-ec = white_cloud.make_EuclideanClusterExtraction()
-ec.set_ClusterTolerance(0.05)
-ec.set_MinClusterSize(10)
-ec.set_MaxClusterSize(1000)
+```
+    ec = white_cloud.make_EuclideanClusterExtraction()
+
+    ec.set_ClusterTolerance(0.06)
+    ec.set_MinClusterSize(50)
+    ec.set_MaxClusterSize(3000)
 ```
 Here is the entire point cloud published in ROS in rviz.
 ![alt text][image3]
